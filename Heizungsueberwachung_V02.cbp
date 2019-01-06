@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Heizungsueberwachung_V02" />
+		<Option pch_mode="2" />
+		<Option compiler="avr-gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Heizungsueberwachung_V02.elf" prefix_auto="1" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="5" />
+				<Option compiler="avr-gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="-std=c++11" />
+					<Add option="-mmcu=atxmega32a4u" />
+					<Add option="-c -fpermissive" />
+					<Add option="-Wno-enum-compare" />
+					<Add option="-MD -MP -MF" />
+					<Add option="-ffunction-sections" />
+					<Add option="-fdata-sections" />
+					<Add option="-fpack-struct" />
+					<Add option="-funsigned-char" />
+					<Add option="-funsigned-bitfields" />
+					<Add option="-DNDEBUG" />
+					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/lib/avrxmega2" />
+					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/include" />
+					<Add directory="../Heizungsueberwachung_V02" />
+					<Add directory="../communication" />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,-u,vfprintf" />
+					<Add option="-Wl,--gc-sections" />
+					<Add library="libm" />
+					<Add library="libprintf_flt" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="MCU" value="" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-mmcu=atxmega32a4u" />
+			<Add option="-Wall" />
+			<Add option="-DF_CPU=22118400UL" />
+			<Add directory="/home/chrak/repositories/communication" />
+		</Compiler>
+		<Linker>
+			<Add option="-mmcu=atxmega32a4u" />
+			<Add option="-Wl,-Map=$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).map,--cref" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="avr-size $(TARGET_OUTPUT_FILE)" />
+			<Add after="avr-objdump -h -S $(TARGET_OUTPUT_FILE) &gt; $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lss" />
+			<Add after="avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).hex" />
+			<Add after="avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).eep" />
+			<Add after="avr-objcopy --no-change-warnings -j .lock --change-section-lma .lock=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).lock" />
+			<Add after="avr-objcopy --no-change-warnings -j .signature --change-section-lma .signature=0 -O ihex $(TARGET_OUTPUT_FILE) $(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).sig" />
+		</ExtraCommands>
+		<Unit filename="../communication/CRC_Calc.cpp" />
+		<Unit filename="../communication/CRC_Calc.h" />
+		<Unit filename="../communication/CmultiBusy.cpp" />
+		<Unit filename="../communication/CmultiBusy.h" />
+		<Unit filename="../communication/Communication.cpp" />
+		<Unit filename="../communication/Communication.h" />
+		<Unit filename="../communication/Serial.cpp" />
+		<Unit filename="../communication/Serial.h" />
+		<Unit filename="ComReceiver.cpp" />
+		<Unit filename="ComReceiver.h" />
+		<Unit filename="CommandFunctions.cpp" />
+		<Unit filename="CommandFunctions.h" />
+		<Unit filename="External.h" />
+		<Unit filename="Globals.cpp" />
+		<Unit filename="Masters/DS248x/DS2484/DS2484.cpp" />
+		<Unit filename="Masters/DS248x/DS2484/DS2484.h" />
+		<Unit filename="Masters/DS248x/DS248x.cpp" />
+		<Unit filename="Masters/DS248x/DS248x.h" />
+		<Unit filename="Masters/Masters.h" />
+		<Unit filename="Masters/OneWireMaster.cpp" />
+		<Unit filename="Masters/OneWireMaster.h" />
+		<Unit filename="MyTimer.cpp" />
+		<Unit filename="MyTimer.h" />
+		<Unit filename="OneWire.h" />
+		<Unit filename="Operators.cpp" />
+		<Unit filename="Operators.h" />
+		<Unit filename="RomId/RomCommands.cpp" />
+		<Unit filename="RomId/RomCommands.h" />
+		<Unit filename="RomId/RomId.h" />
+		<Unit filename="RomId/RomIterator.cpp" />
+		<Unit filename="RomId/RomIterator.h" />
+		<Unit filename="Slaves/Authenticators/Authenticators.h" />
+		<Unit filename="Slaves/Bridges/Bridges.h" />
+		<Unit filename="Slaves/Bridges/DS28E17/DS28E17.h" />
+		<Unit filename="Slaves/Memory/DS2431/DS2431.h" />
+		<Unit filename="Slaves/Memory/Memory.h" />
+		<Unit filename="Slaves/OneWireSlave.h" />
+		<Unit filename="Slaves/Sensors/DS18B20/DS18B20.cpp" />
+		<Unit filename="Slaves/Sensors/DS18B20/DS18B20.h" />
+		<Unit filename="Slaves/Sensors/DS1920/DS1920.h" />
+		<Unit filename="Slaves/Sensors/Sensors.h" />
+		<Unit filename="Slaves/Slaves.h" />
+		<Unit filename="Slaves/Switches/DS2413/DS2413.h" />
+		<Unit filename="Slaves/Switches/Switches.h" />
+		<Unit filename="TLog.h" />
+		<Unit filename="TempSensor.cpp" />
+		<Unit filename="TempSensor.h" />
+		<Unit filename="Utilities/array.h" />
+		<Unit filename="Utilities/crc.cpp" />
+		<Unit filename="Utilities/crc.h" />
+		<Unit filename="Wire.cpp" />
+		<Unit filename="Wire.h" />
+		<Unit filename="baud.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="myconstants.h" />
+		<Unit filename="sensirion_protocol.cpp" />
+		<Unit filename="sensirion_protocol.h" />
+		<Unit filename="twi_master_driver.cpp" />
+		<Unit filename="twi_master_driver.h" />
+		<Unit filename="uartHardware.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
