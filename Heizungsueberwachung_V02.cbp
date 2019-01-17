@@ -29,8 +29,9 @@
 					<Add option="-DNDEBUG" />
 					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/lib/avrxmega2" />
 					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/include" />
-					<Add directory="../Heizungsueberwachung_V02" />
+					<Add directory="../Heizungsueberwachung_v02" />
 					<Add directory="../communication" />
+					<Add directory="Utilities" />
 				</Compiler>
 				<Linker>
 					<Add option="-Wl,-u,vfprintf" />
