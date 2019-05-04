@@ -8,7 +8,7 @@
 
 
 #ifndef BAUD_H_
-#define BAUD_H_
+#define BAUD_H_ 
 
 	#define VALUE_TO_STRING(x) #x
 	#define VALUE(x) VALUE_TO_STRING(x)
