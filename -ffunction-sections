@@ -1,5 +1,4 @@
-obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
- Slaves/Sensors/DS18B20/DS18B20.cpp ../Heizungsueberwachung_v02/TLog.h \
+obj/Release/Heizungsueberwachung_v02/TempSensor.o: TempSensor.cpp TLog.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/avr/io.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/avr/sfr_defs.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/inttypes.h \
@@ -22,23 +21,19 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/stdio.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/lib/gcc/avr/5.4.0/include/stdarg.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/string.h \
- ../Heizungsueberwachung_v02/RomId/RomId.h \
- ../Heizungsueberwachung_v02/Utilities/array.h \
- ../Heizungsueberwachung_v02/Utilities/crc.h \
- ../Heizungsueberwachung_v02/twi_master_driver.h \
- ../Heizungsueberwachung_v02/myconstants.h ../communication/Serial.h \
+ RomId/RomId.h ../Heizungsueberwachung_v02/Utilities/array.h \
+ ../Heizungsueberwachung_v02/Utilities/crc.h twi_master_driver.h \
+ myconstants.h ../communication/Serial.h \
+ ../Heizungsueberwachung_v02/uartHardware.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/util/delay.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/util/delay_basic.h \
  /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/math.h \
- ../Heizungsueberwachung_v02/uartHardware.h \
- ../Heizungsueberwachung_v02/OneWire.h \
- ../Heizungsueberwachung_v02/Masters/Masters.h \
+ OneWire.h Masters/Masters.h \
  ../Heizungsueberwachung_v02/Masters/DS248x/DS2484/DS2484.h \
  ../Heizungsueberwachung_v02/Masters/DS248x/DS248x.h \
  ../Heizungsueberwachung_v02/twi_master_driver.h \
  ../Heizungsueberwachung_v02/Masters/OneWireMaster.h \
- ../Heizungsueberwachung_v02/Wire.h \
- ../Heizungsueberwachung_v02/Slaves/Slaves.h \
+ ../Heizungsueberwachung_v02/Wire.h Slaves/Slaves.h \
  ../Heizungsueberwachung_v02/Slaves/Bridges/Bridges.h \
  ../Heizungsueberwachung_v02/Slaves/Bridges/DS28E17/DS28E17.h \
  ../Heizungsueberwachung_v02/Slaves/OneWireSlave.h \
@@ -52,19 +47,12 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
  ../Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.h \
  ../Heizungsueberwachung_v02/Slaves/Switches/Switches.h \
  ../Heizungsueberwachung_v02/Slaves/Switches/DS2413/DS2413.h \
- ../Heizungsueberwachung_v02/RomId/RomCommands.h \
- ../Heizungsueberwachung_v02/Wire.h ../communication/CRC_Calc.h \
- ../Heizungsueberwachung_v02/TempSensor.h \
- ../Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.h \
- ../Heizungsueberwachung_v02/External.h \
- ../Heizungsueberwachung_v02/MyTimer.h ../communication/Communication.h \
- ../communication/Serial.h ../Heizungsueberwachung_v02/ComReceiver.h \
- ../Heizungsueberwachung_v02/CommandFunctions.h \
- ../Heizungsueberwachung_v02/TLog.h \
- ../Heizungsueberwachung_v02/sensirion_protocol.h \
- ../communication/CmultiBusy.h
+ RomId/RomCommands.h Wire.h ../communication/CRC_Calc.h TempSensor.h \
+ Slaves/Sensors/DS18B20/DS18B20.h External.h MyTimer.h \
+ ../communication/Communication.h ../communication/Serial.h ComReceiver.h \
+ CommandFunctions.h sensirion_protocol.h ../communication/CmultiBusy.h
 
-../Heizungsueberwachung_v02/TLog.h:
+TLog.h:
 
 /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/avr/io.h:
 
@@ -110,17 +98,19 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
 
 /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/string.h:
 
-../Heizungsueberwachung_v02/RomId/RomId.h:
+RomId/RomId.h:
 
 ../Heizungsueberwachung_v02/Utilities/array.h:
 
 ../Heizungsueberwachung_v02/Utilities/crc.h:
 
-../Heizungsueberwachung_v02/twi_master_driver.h:
+twi_master_driver.h:
 
-../Heizungsueberwachung_v02/myconstants.h:
+myconstants.h:
 
 ../communication/Serial.h:
+
+../Heizungsueberwachung_v02/uartHardware.h:
 
 /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/util/delay.h:
 
@@ -128,11 +118,9 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
 
 /home/chrak/.local/share/avr8-gnu-toolchain-linux_x86_64/avr/include/math.h:
 
-../Heizungsueberwachung_v02/uartHardware.h:
+OneWire.h:
 
-../Heizungsueberwachung_v02/OneWire.h:
-
-../Heizungsueberwachung_v02/Masters/Masters.h:
+Masters/Masters.h:
 
 ../Heizungsueberwachung_v02/Masters/DS248x/DS2484/DS2484.h:
 
@@ -144,7 +132,7 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
 
 ../Heizungsueberwachung_v02/Wire.h:
 
-../Heizungsueberwachung_v02/Slaves/Slaves.h:
+Slaves/Slaves.h:
 
 ../Heizungsueberwachung_v02/Slaves/Bridges/Bridges.h:
 
@@ -172,30 +160,28 @@ obj/Release/Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.o: \
 
 ../Heizungsueberwachung_v02/Slaves/Switches/DS2413/DS2413.h:
 
-../Heizungsueberwachung_v02/RomId/RomCommands.h:
+RomId/RomCommands.h:
 
-../Heizungsueberwachung_v02/Wire.h:
+Wire.h:
 
 ../communication/CRC_Calc.h:
 
-../Heizungsueberwachung_v02/TempSensor.h:
+TempSensor.h:
 
-../Heizungsueberwachung_v02/Slaves/Sensors/DS18B20/DS18B20.h:
+Slaves/Sensors/DS18B20/DS18B20.h:
 
-../Heizungsueberwachung_v02/External.h:
+External.h:
 
-../Heizungsueberwachung_v02/MyTimer.h:
+MyTimer.h:
 
 ../communication/Communication.h:
 
 ../communication/Serial.h:
 
-../Heizungsueberwachung_v02/ComReceiver.h:
+ComReceiver.h:
 
-../Heizungsueberwachung_v02/CommandFunctions.h:
+CommandFunctions.h:
 
-../Heizungsueberwachung_v02/TLog.h:
-
-../Heizungsueberwachung_v02/sensirion_protocol.h:
+sensirion_protocol.h:
 
 ../communication/CmultiBusy.h:
