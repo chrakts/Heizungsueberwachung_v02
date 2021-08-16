@@ -27,8 +27,8 @@
 					<Add option="-funsigned-char" />
 					<Add option="-funsigned-bitfields" />
 					<Add option="-DNDEBUG" />
-					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/lib/avrxmega2" />
-					<Add directory="/home/chrak/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/include" />
+					<Add directory="/home/christof/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/lib/avrxmega2" />
+					<Add directory="/home/christof/Downloads/avr8-gnu-toolchain-linux_x86_64/avr/include" />
 					<Add directory="../Heizungsueberwachung_v02" />
 					<Add directory="../communication" />
 					<Add directory="Utilities" />
@@ -48,7 +48,7 @@
 			<Add option="-mmcu=atxmega32a4u" />
 			<Add option="-Wall" />
 			<Add option="-DF_CPU=22118400UL" />
-			<Add directory="/home/chrak/repositories/communication" />
+			<Add directory="/home/christof/repositories/communication" />
 		</Compiler>
 		<Linker>
 			<Add option="-mmcu=atxmega32a4u" />
