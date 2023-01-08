@@ -45,3 +45,5 @@
 *.app
 
 -ffunction-sections
+
+-DNDEBUG
